@@ -23,7 +23,7 @@ const signup = async (req, res) => {
 
 		res
 			.status(200)
-			.json({ token, fullName, username, hashedPassword, phoneNumber });
+			.json({ token, fullName, userId, username, hashedPassword, phoneNumber });
 	} catch (error) {
 		console.log(error);
 		res.status(500).json({ message: error });
